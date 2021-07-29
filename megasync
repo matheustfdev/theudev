@@ -1,0 +1,12 @@
+#!/bin/bash
+read
+cd
+read -t1
+echo -e "Press any button for start download.."
+read
+wget -c https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb -O megasync2004.deb
+sudo apt install megasync2004.deb -y
+apt-get install -f -y
+apt-get update -y
+clear
+exit
